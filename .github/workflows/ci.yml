@@ -59,7 +59,7 @@ jobs:
         run: npm ci
 
       # Step4
-      # - name: 代码校验
+      - name: 代码校验
         run: npm run lint:eslint
 
       # Step5
