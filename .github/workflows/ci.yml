@@ -60,7 +60,7 @@ jobs:
 
       # Step4
       # - name: 代码校验
-      # run: npm run lint:eslint
+        run: npm run lint:eslint
 
       # Step5
       - name: 代码构建
