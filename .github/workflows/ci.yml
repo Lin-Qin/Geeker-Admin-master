@@ -65,3 +65,10 @@ jobs:
       # Step5
       - name: 代码构建
         run: npm run build:prod
+
+      # 打包到github pages
+      - name: DeployGP
+        uses: peaceiris/actions-pages@v1
+        with:
+          github_token: ${{ secrets.GA_TOKEN }}
+          publish_dir: ./dist
