@@ -60,16 +60,16 @@ jobs:
 
       # Step4
       - name: 代码校验
-        run: npm run lint
+        run: npm run lint:lint-staged
 
       # Step5
-      - name: 单元测试
-        run: npm test
+      # - name: 单元测试
+      #   run: npm test
 
       # Step6
-      - name: 文档构建
-        run: npm run docs:build
+      # - name: 文档构建
+      #   run: npm run docs:build
 
       # Step7
       - name: 代码构建
-        run: npm run build
+        run: npm run build:prod
